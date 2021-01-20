@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script src="jquery.js" crossorigin="anonymous"></script>
     <title>Portfólio</title>
 </head>
 
@@ -28,9 +29,9 @@
                 <img src="imagens/mockup-1023524_1280.jpg" alt="">
             </div>
             <div class="banner">
-                <h1>Web Developer &<br> descktop Developer</h1>
+                <h1>Web Developer &<br> desktop Developer</h1>Cillum magna amet dolor sint ex eu amet esse amet.
                 <p>Henrique Santos Neiva</p>
-                <button>Saiba mais</button>
+                <a href="#conhecimentos"> <button>Saiba mais</button></a>
             </div>
         </header>
 
@@ -84,7 +85,8 @@
                         <h3>java</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ex eius voluptatem deleniti alias commodi doloremque aspernatur id adipisci quia ea, distinctio maxime, at nemo. Officiis suscipit excepturi quia aut?</p>
+                        <p>Eu entrei no java com jogos e também com projetos desktop e para resoluções de cálculos porem estou aproveitando tudo que aprendi e vou focar java para web junto com spring boot gosto muito de java e sou seguro na linguagem para
+                            desenvolver qualquer coisa.</p>
                     </div>
                 </div>
                 <div class="conhecimento">
@@ -103,7 +105,8 @@
                         <h3>c#</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sequi, quas illo dolor totam voluptas pariatur harum blanditiis veritatis culpa doloremque aspernatur nesciunt dicta iure fuga similique ad, ut impedit.</p>
+                        <p>O c sharp foi minha primeira linguagem aprendi desenvolver para desktop e me apaixonei por ela além de ser um pouco semelhante com java foi com ela que eu tive uma boa logica de programação com ela eu amadureci muito lembro ate
+                            hoje do meu primeiro hello word, tambem aprendi em paralelo com visual basic .</p>
                     </div>
                 </div>
                 <div class="conhecimento">
@@ -120,119 +123,164 @@
                 </div>
             </div>
         </section>
-
-        <div class="sessao-projetos" id="projetos">
-            <div class="sessao-header">
-                <h1>Projetos</h1>
-            </div>
-            <div class="projetos">
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj1.jpg" alt="imagem do projeto ToDo" />
-                    </div>
-                    <div class="card-info">
-                        <h2>ToDo List</h2>
-                        <h3>Javascript</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ducimus vero maxime amet magnam doloribus eos consequatur expedita architecto hic?</p>
-                        <button class="btn">Saiba Mais</button>
-                    </div>
+        <section>
+            <div class="sessao-projetos" id="projetos">
+                <div class="sessao-header">
+                    <h1>Projetos</h1>
                 </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj2.jpg" alt="imagem do projeto Maratona" />
-                    </div>
-                    <div class="card-info">
-                        <h2>Maratona</h2>
-                        <h3>HTML, CSS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vero aliquam? Pariatur libero voluptas ipsam ullam consectetur ab facilis cumque.</p>
-                        <button class="btn">Saiba Mais</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj3.jpg" alt="imagem do projeto Casa Bela" />
-                    </div>
-                    <div class="card-info">
-                        <h2>Casa Bela</h2>
-                        <h3>HTML</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta doloremque tempore nisi placeat, eveniet voluptate recusandae. Eius, sapiente?</p>
-                        <button class="btn">Saiba Mais</button>
-                    </div>
-                </div>
-            </div>
-
-            </section>
-
-            <section class="sessao-contato" id="contato">
-                <div class="contato-wrapper">
-                    <div class="contato-left"></div>
-                    <div class="contato-right">
-                        <h1>Contato</h1>
-                        <form action="https://api.staticforms.xyz/submit" method="POST">
-                            <input type="hidden" name="accessKey" value="227ef1d3-feb7-4c6d-8fd2-709055f82e3d">
-                            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html#contato">
-                            <div class="input-group">
-                                <input type="text" class="field" id="nome" name="name">
-                                <label for="nome" class="field-label">Nome</label>
-                            </div>
-                            <div class="input-group">
-                                <input type="text" class="field" id="email" name="email">
-                                <label for="email" class="field-label">E-mail</label>
-                            </div>
-                            <div class="input-group">
-                                <textarea class="field" id="mensagem" name="message"></textarea>
-                                <label for="mensagem" class="field-label">Mensagem</label>
-                            </div>
-                            <button type="submit" class="btn btn-submit">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-            <section class="sessao-orcamento" id="orcamento">
-                <div class="orcamento-wrapper">
-                    <h1>Faça um orçamento</h1>
-                    <form>
-                        <label for="qtde">Qtde de Páginas</label>
-                        <input type="number" min="1" name="qtde" id="qtde">
-                        <label for="js">Preciso de um script JS</label>
-                        <input type="checkbox" name="js" id="js">
-                        <label>Layout</label>
-                        <div class="group-layout">
-                            <div>
-                                <input type="radio" name="layout" id="layout-sim">
-                                <label for="layout-sim">Preciso de um layout</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="layout" id="layout-nao">
-                                <label for="layout-nao">Já tenho um layout</label>
-                            </div>
+                <div class="projetos">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj1.jpg" alt="imagem do projeto ToDo" />
                         </div>
-                        <label for="prazo">Prazo</label>
-                        <input type="range" name="prazo" id="prazo" min="1" max="10">
-                        <label id="preco">R$ 0,00</label>
-                        <button class="btn btn-orcamento" type="submit">Enviar</button>
+                        <div class="card-info">
+                            <h2>controle de estoque</h2>
+                            <h3>visual basic</h3>
+                            <p>projeto para controle de estoque e relatorios para uma farmacia com visual basic e mysql</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj2.jpg" alt="imagem do projeto Maratona" />
+                        </div>
+                        <div class="card-info">
+                            <h2>Maratona</h2>
+                            <h3>HTML, CSS</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vero aliquam? Pariatur libero voluptas ipsam ullam consectetur ab facilis cumque.</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj3.jpg" alt="imagem do projeto Casa Bela" />
+                        </div>
+                        <div class="card-info">
+                            <h2>Casa Bela</h2>
+                            <h3>HTML</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta doloremque tempore nisi placeat, eveniet voluptate recusandae. Eius, sapiente?</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- div oculta -->
+
+                <div class="projetos2" id="ocultar" style="display: none;">
+
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj1.jpg" alt="imagem do projeto ToDo" />
+                        </div>
+                        <div class="card-info">
+                            <h2>controle de estoque</h2>
+                            <h3>visual basic</h3>
+                            <p>projeto para controle de estoque e relatorios para uma farmacia com visual basic e mysql</p>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj1.jpg" alt="imagem do projeto ToDo" />
+                        </div>
+                        <div class="card-info">
+                            <h2>controle de estoque</h2>
+                            <h3>visual basic</h3>
+                            <p>projeto para controle de estoque e relatorios para uma farmacia com visual basic e mysql</p>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj1.jpg" alt="imagem do projeto ToDo" />
+                        </div>
+                        <div class="card-info">
+                            <h2>controle de estoque</h2>
+                            <h3>visual basic</h3>
+                            <p>projeto para controle de estoque e relatorios para uma farmacia com visual basic e mysql</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mostar-mais">
+                    <button class="mais" id="btn-ocultar">Mostar Mais</button>
+                </div>
+        </section>
+
+        <section class="sessao-contato" id="contato">
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form>
+                        <input type="hidden" name="accessKey" value="227ef1d3-feb7-4c6d-8fd2-709055f82e3d">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html#contato">
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome" name="name">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email" name="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem" name="message"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar</button>
                     </form>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <footer>
-                <div class="footer-content">
-                    <p>
-                        Copyright &copy; 2021, Henrique Santos - Todos os diretos reservados
-                    </p>
-                    <p>WhatsApp (27) 998459349</p>
-                    <div class="social-list">
-                        <ul>
-                            <li><a href="https://www.facebook.com/henrique.neivaa"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.instagram.com/henriqueneivaa/"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
+        <section class="sessao-orcamento" id="orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="qtde">Qtde de Páginas</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um layout</label>
+                        </div>
                     </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">R$ 0,00</label>
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2021, Henrique Santos - Todos os diretos reservados
+                </p>
+                <p>WhatsApp (27) 998459349</p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="https://www.facebook.com/henrique.neivaa"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/henriqueneivaa/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
                 </div>
-            </footer>
-            <a href="#home" id="link-topo">
-                <i class="fas fa-arrow-up"></i>
-            </a>
+            </div>
+        </footer>
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
         </div>
 </body>
 

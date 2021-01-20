@@ -397,6 +397,29 @@ header {
     box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
 }
 
+
+/* botao mstar mais*/
+
+.mais {
+    padding: 10px;
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to left, #a044ff, #6a3093);
+    font-family: var(--font-action);
+    color: #eee;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+}
+
+.mostar-mais {
+    padding: 5px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+}
+
 .card-info button {
     width: 8rem;
     height: 2.5rem;
@@ -621,3 +644,15 @@ footer {
     border-radius: .3rem;
     box-shadow: 0 0.1rem 0.6rem #00000009;
 }
+
+
+/* configuaraco da parte oclta */
+
+.projetos2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+
+/* responsivo */
