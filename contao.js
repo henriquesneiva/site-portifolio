@@ -5,12 +5,12 @@ $(document).ready(function() {
             type: "POST",
             url: "https://api.staticforms.xyz/submit",
             data: {
-                'name': $('#name').val(),
+                'name': $('#nome').val(),
                 'email': $('#email').val(),
-                'message': $('#message').val(),
+                'message': $('#mensagem').val(),
                 'honeypot': $('#honeypot').val(),
                 'accessKey': $('#accessKey').val(),
-                'subject': $('#subject').val()
+
             },
             dataType: "json",
             success: function(response) {

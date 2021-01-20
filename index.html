@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <script src="jquery.js" crossorigin="anonymous"></script>
+    <script src="contao.js"></script>
     <title>Portfólio</title>
 </head>
 
@@ -217,8 +218,8 @@
                 <div class="contato-right">
                     <h1>Contato</h1>
                     <form>
-                        <input type="hidden" name="accessKey" value="227ef1d3-feb7-4c6d-8fd2-709055f82e3d">
-                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html#contato">
+                        <input type="hidden" name="accessKey" value="227ef1d3-feb7-4c6d-8fd2-709055f82e3d" id="accessKey">
+                        <input type="text" name="honeypot" id="honeypot" style="display:none">
                         <div class="input-group">
                             <input type="text" class="field" id="nome" name="name">
                             <label for="nome" class="field-label">Nome</label>
@@ -231,7 +232,7 @@
                             <textarea class="field" id="mensagem" name="message"></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
-                        <button type="submit" class="btn btn-submit">Enviar</button>
+                        <button type="button" id="btn-envio" class="btn btn-submit">Enviar</button>
                     </form>
                 </div>
             </div>

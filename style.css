@@ -656,3 +656,9 @@ footer {
 
 
 /* responsivo */
+
+@media screen and (max-width:800px) {
+    .show-menu .sidebar {
+        right: 0;
+    }
+}
