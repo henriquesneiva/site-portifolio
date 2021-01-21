@@ -420,11 +420,6 @@ header {
     margin-left: 50%;
 }
 
-.card-info button {
-    width: 8rem;
-    height: 2.5rem;
-}
-
 .card:hover .card-info {
     bottom: 2rem;
     opacity: 1;
@@ -500,13 +495,15 @@ header {
 .field-label {
     position: absolute;
     left: 0;
-    top: 2rem;
+    top: 0.5rem;
     font-size: 1rem;
     font-family: var(--font-secundary);
     text-transform: uppercase;
     transition: all 0.3s;
 }
 
+
+/*
 .field:focus~label {
     top: 0;
     font-size: 0.7rem;
@@ -514,7 +511,7 @@ header {
 
 .field:focus {
     border-bottom: 1px solid;
-}
+}*/
 
 .btn-submit {
     font-size: 1.2rem;
@@ -658,7 +655,59 @@ footer {
 /* responsivo */
 
 @media screen and (max-width:800px) {
-    .show-menu .sidebar {
-        right: 0;
+    .conhecimentos {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .conhecimentos img {
+        display: none;
+    }
+    #link-topo {
+        display: none;
+    }
+    .card {
+        padding: 5px;
+        height: 250px;
+    }
+    .card-info h2 {
+        font-family: var(--font-primary);
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(14, 240, 202);
+    }
+    .card-info h3 {
+        font-family: var(--font-action);
+        font-weight: bolder;
+        font-size: 15px;
+        color: #ff4081;
+        margin-bottom: 1rem;
+    }
+    .card-info p {
+        text-align: justify;
+        font-size: 15px;
+        font-family: var(--font-secundary);
+        color: rgb(15, 235, 33);
+        font-weight: 400;
+        width: 1px;
+        margin-bottom: 2rem;
+    }
+    .card:hover .card-info {
+        text-align: justify;
+        width: max-content;
+        height: 300px;
+        bottom: 0rem;
+        opacity: 1;
+        visibility: visible;
+        font-size: 15px;
+    }
+    .sessao-orcamento {
+        display: none;
+    }
+    .sessao-contato {
+        display: none;
+    }
+    footer {
+        display: none;
     }
 }
