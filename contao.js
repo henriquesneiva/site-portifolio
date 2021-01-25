@@ -16,6 +16,8 @@ $(document).ready(function() {
             success: function(response) {
                 if (response.success == true) {
                     alert('Email enviado!');
+                } else {
+                    alert('ocorreu um erro ')
                 }
             }
         });
