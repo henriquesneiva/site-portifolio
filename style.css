@@ -123,7 +123,7 @@ header {
 
 .banner h1 {
     color: #ffffff;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-family: var(--font-primary);
     font-weight: 200;
     text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
@@ -395,6 +395,8 @@ header {
     border-radius: 0.5rem;
     border: none;
     box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    padding: 5px;
 }
 
 
@@ -644,19 +646,21 @@ footer {
 /* responsivo */
 
 @media screen and (max-width:800px) {
+    .sessao-header h1 {
+        font-size: 2rem;
+    }
     .conhecimentos {
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        padding: 3rem;
     }
     .conhecimentos img {
-        display: none;
-    }
-    #link-topo {
-        display: none;
+        display: flex;
+        width: 90%;
     }
     .card {
-        padding: 5px;
+        display: grid;
+        padding: 4px;
         height: 280px;
     }
     .card-info h2 {
