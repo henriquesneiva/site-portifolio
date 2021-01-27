@@ -1,27 +1,32 @@
 @media screen and (max-width:800px) {
     .sessao-header h1 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .conhecimentos {
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        padding: 3rem;
     }
     .conhecimentos img {
-        display: none;
+        display: flex;
+        width: 90%;
     }
-    #link-topo {
-        display: none;
+    .projetos {
+        display: flex;
+        flex-direction: column;
     }
     .card {
-        padding: 5px;
-        height: 280px;
+        padding: 4px;
+        height: 400px;
+        width: auto;
+        padding: 1rem;
     }
     .card-info h2 {
         font-family: var(--font-primary);
         font-size: 15px;
         font-weight: 500;
         color: rgb(14, 240, 202);
+        text-align: start;
     }
     .card-info h3 {
         font-family: var(--font-action);
@@ -32,12 +37,11 @@
     }
     .card-info p {
         text-align: justify;
-        font-size: 15px;
+        font-size: 1.5rem;
         font-family: var(--font-secundary);
-        color: rgb(15, 235, 33);
+        color: #ffffff;
         font-weight: 400;
-        width: 1px;
-        margin-bottom: 2rem;
+        width: 15rem;
     }
     .card:hover .card-info {
         text-align: justify;
@@ -48,11 +52,12 @@
         visibility: visible;
         font-size: 15px;
     }
+    #ocultar {
+        display: flex;
+        flex-direction: column;
+    }
     .mostar-mais {
         margin-left: 40%;
-    }
-    .sessao-orcamento {
-        display: none;
     }
     .sessao-contato {
         width: 100%;
@@ -72,8 +77,7 @@
         display: none;
     }
     .contato-right {
-        margin-left: 15px;
-        width: 250px;
+        width: 17rem;
         background-color: #eee;
         padding: 1rem 3rem 3rem 3rem;
     }
