@@ -337,12 +337,21 @@ header {
 .card-img-wrapper {
     width: 100%;
     height: 100%;
-    background-color: #262626;
+    background-color: #dfdddff8;
     border-radius: 0.5rem;
 }
 
 .card-img-wrapper img {
-    object-fit: cover;
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.card-img-wrapper video {
+    object-fit: scale-down;
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
@@ -351,7 +360,7 @@ header {
 }
 
 .card:hover .card-img-wrapper img {
-    opacity: 0.5;
+    opacity: 0.1;
 }
 
 .card-info {
@@ -380,8 +389,8 @@ header {
 
 .card-info p {
     font-family: var(--font-secundary);
-    color: #eee;
-    font-weight: 400;
+    color: black;
+    font-weight: 1000;
     width: 80%;
     margin-bottom: 2rem;
 }
